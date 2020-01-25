@@ -6,6 +6,7 @@ export default function CharacterCard(props) {
   width: 80%;
   padding: 10px;
   border-radius: 10px;
+  box-shadow: 1px 1px 5px black;
   margin: 20px auto;
   display: flex;
   justify-content: space-between;
@@ -26,10 +27,10 @@ export default function CharacterCard(props) {
 
   const Status = styled.div`
   test-align: left;
-  background: blue;
+  background: tan;
   height: 30px;
   verticle-align: middle;
-  color: white;
+  color: black;
   padding: 10px;
   border-radius: 5px;
   `;
