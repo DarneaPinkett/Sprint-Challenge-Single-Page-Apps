@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Axios, {Link} from "axios";
+import Axios from "axios";
 import CharacterCard from "./CharacterCard.js";
 import SearchForm from "./SearchForm.js";
+import {Link} from "react-router-dom";
 
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
@@ -13,8 +14,6 @@ export default function CharacterList() {
   };
 
   useEffect(() => {
-    // TODO: Add API Request here - must run in `useEffect`
-    //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
     Axios.get("https://rickandmortyapi.com/api/character/")
     .then(response => {console.log(response.data.results);
     setCharacters(response.data.results);
