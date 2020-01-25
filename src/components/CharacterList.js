@@ -25,7 +25,7 @@ export default function CharacterList() {
   return (
     <section className="character-list">
       <h2>List of Characters</h2>
-      <Link to={"/"}>Home</Link>
+      <Link className="main-buttons" to={"/"}>Home</Link>
       <SearchForm search={search} characters={characters} />
       {filiterdData.map(char => {
         return <CharacterCard key={char.id} character={char} />;
